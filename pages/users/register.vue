@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      /users/_id.vue
+      /users/register.vue
     </p>
   </div>
 </template>
