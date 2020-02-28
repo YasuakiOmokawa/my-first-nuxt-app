@@ -4,7 +4,7 @@ module.exports = {
    */
   head: {
     title: "my-first-nuxt-app",
-    titleTemplate: '%s | Nuxt.js tag items viewer',
+    titleTemplate: "%s | Nuxt.js tag items viewer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -31,6 +31,7 @@ module.exports = {
      */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
+        config.devtool = "inline-cheap-module-source-map"; // for source map
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js|vue)$/,
