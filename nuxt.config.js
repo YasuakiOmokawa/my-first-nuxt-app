@@ -17,7 +17,9 @@ module.exports = {
    */
   loading: { color: "#3B8070" },
   modules: ["@nuxtjs/axios"],
-  axios: {},
+  axios: {
+    baseURL: "https://nuxt-blog-service-5d322.firebaseio.com"
+  },
   plugins: ["~/plugins/axios.js", "~/plugins/logger"],
   env: {
     QIITA_TOKEN: process.env.QIITA_TOKEN
