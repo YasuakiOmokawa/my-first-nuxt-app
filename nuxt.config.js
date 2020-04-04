@@ -27,6 +27,10 @@ module.exports = {
   router: {
     middleware: ["auth"]
   },
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/common.css'
+  ]
   /*
    ** Build configuration
    */
